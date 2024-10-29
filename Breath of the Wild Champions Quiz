@@ -1,0 +1,121 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    
+    //Noah's zelda champion quiz
+    //Sept 19th, 2024
+
+
+        int Revali = 0;
+        int Daruk = 0;
+        int Mipha = 0;
+        int Urbosa = 0;
+        string answer;
+
+        cout << "What is your preferred way to solve problems?" << endl;
+        cout << "a) Use strategy and planning. b) Dive in headfirstand tackle it. c) Analyze the situation thoroughly before acting. d) Seek help from others and collaborate." << endl;
+        cin >> answer;
+        if (answer == "d")
+            Mipha += 1;
+        else if (answer == "b")
+            Daruk += 1;
+        else if (answer == "a")
+            Revali += 1;
+        else if (answer == "c")
+            Urbosa += 1;
+
+        cout << "How do you feel about adventure?" << endl;
+        cout << "a) I love exploring with friends. b) I enjoy it, but I appreciate downtime. c) I thrive on it; the more, the better! d) I prefer familiar places but enjoy occasional adventures." << endl;
+        cin >> answer;
+        if (answer == "a")
+            Mipha += 1;
+        else if (answer == "b")
+            Daruk += 1;
+        else if (answer == "c")
+            Revali += 1;
+        else if (answer == "d")
+            Urbosa += 1;
+
+        cout << "What is your ideal weapon?" << endl;
+        cout << "a) A magical weapon; I prefer unique abilities. b) A sword; I enjoy close combat. c) A spear; I value versatility. d) A bow; I like precision from a distance." << endl;
+        cin >> answer;
+        if (answer == "c")
+            Mipha += 1;
+        else if (answer == "b")
+            Daruk += 1;
+        else if (answer == "d")
+            Revali += 1;
+        else if (answer == "a")
+            Urbosa += 1;
+
+        cout << "How do you handle challenges?" << endl;
+        cout << "a) I rally my friends for support. b) I take action right away. c) With patience and planning. d) I think critically before making a move." << endl;
+        cin >> answer;
+        if (answer == "a")
+            Mipha += 1;
+        else if (answer == "b")
+            Daruk += 1;
+        else if (answer == "c")
+            Revali += 1;
+        else if (answer == "d")
+            Urbosa += 1;
+
+        cout << "What role do you usually take in a group?" << endl;
+        cout << "a) The supporter or mediator. b) The brave leader. c) The thinker or analyst. d) The strategist or planner." << endl;
+        cin >> answer;
+        if (answer == "a")
+            Mipha += 1;
+        else if (answer == "b")
+            Daruk += 1;
+        else if (answer == "d")
+            Revali += 1;
+        else if (answer == "c")
+            Urbosa += 1;
+        
+        cout << "What is your favorite landscape?" << endl;
+        cout << "a) Open plains and fields. b) Mystical ruins and ancient places. c) Lush forests and mountains. d) Cozy villages and towns." << endl;
+        cin >> answer;
+        if (answer == "d")
+            Mipha += 1;
+        else if (answer == "a")
+            Daruk += 1;
+        else if (answer == "c")
+            Revali += 1;
+        else if (answer == "b")
+            Urbosa += 1;
+
+        cout << "How do you view responsibility?" << endl;
+        cout << "a) I see it as a way to protect and serve. b) I prefer to share the load with others. c) It is a challenge I gladly accept. d)  It is important, and I take it seriously." << endl;
+        cin >> answer;
+        if (answer == "b")
+            Mipha += 1;
+        else if (answer == "c")
+            Daruk += 1;
+        else if (answer == "d")
+            Revali += 1;
+        else if (answer == "a")
+            Urbosa += 1;
+
+        cout << "What is your biggest passion?" << endl;
+        cout << "a) Community and friendships. b) Knowledge and discovery. c) Nature and the outdoors. d) Combat and heroism." << endl;
+        cin >> answer;
+        if (answer == "a")
+            Mipha += 1;
+        else if (answer == "d")
+            Daruk += 1;
+        else if (answer == "c")
+            Revali += 1;
+        else if (answer == "b")
+            Urbosa += 1;
+
+        if (Daruk >= Mipha && Daruk >= Urbosa && Daruk >= Revali)
+            cout << "You are Daruk!" << endl;
+        else if (Mipha >= Urbosa && Mipha >= Revali)
+            cout << "You are Mipha!" << endl;
+        else if (Urbosa >= Revali)
+            cout << "You are Urbosa!" << endl;
+        else
+            cout << "You are Revali!" << endl;
+
+}
